@@ -94,3 +94,9 @@ pushd workdir
 
     ios/build/tools/setup-gn.py
     autoninja -C out/Debug-iphonesimulator gn_all
+
+  popd
+
+popd
+
+df -kh
