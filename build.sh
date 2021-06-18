@@ -6,6 +6,8 @@ sw_vers
 
 sudo rm -rf /Applications
 
+df -kh
+
 mkdir workdir
 
 pushd workdir
