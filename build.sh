@@ -21,35 +21,35 @@ sudo rm -rf "/Applications/R.app" &
 sudo rm -rf "/Applications/VirtualBox.app" &
 sudo rm -rf "/Applications/Visual Studio.app" &
 
-sudo rm -rf "/Applications/Xcode_10.3_beta.app"
-sudo rm -rf "/Applications/Xcode_10.3.0.app"
-sudo rm -rf "/Applications/Xcode_10.3.app"
-sudo rm -rf "/Applications/Xcode_11.2.1_beta.app"
-sudo rm -rf "/Applications/Xcode_11.2.1.app"
-sudo rm -rf "/Applications/Xcode_11.2.app"
-sudo rm -rf "/Applications/Xcode_11.3.1_beta.app"
-sudo rm -rf "/Applications/Xcode_11.3.1.app"
-sudo rm -rf "/Applications/Xcode_11.3.app"
-sudo rm -rf "/Applications/Xcode_11.4.1_beta.app"
-sudo rm -rf "/Applications/Xcode_11.4.1.app"
-sudo rm -rf "/Applications/Xcode_11.4.app"
-sudo rm -rf "/Applications/Xcode_11.5_beta.app"
-sudo rm -rf "/Applications/Xcode_11.5.0.app"
-sudo rm -rf "/Applications/Xcode_11.5.app"
-sudo rm -rf "/Applications/Xcode_11.6_beta.app"
-sudo rm -rf "/Applications/Xcode_11.6.0.app"
-sudo rm -rf "/Applications/Xcode_11.6.app"
-sudo rm -rf "/Applications/Xcode_11.7_beta.app"
-sudo rm -rf "/Applications/Xcode_11.7.0.app"
-sudo rm -rf "/Applications/Xcode_11.7.app"
-sudo rm -rf "/Applications/Xcode_12.0.1.app"
-sudo rm -rf "/Applications/Xcode_12.1.0.app"
-sudo rm -rf "/Applications/Xcode_12.1.1.app"
-sudo rm -rf "/Applications/Xcode_12.1.app"
-sudo rm -rf "/Applications/Xcode_12.2.0.app"
-sudo rm -rf "/Applications/Xcode_12.2.app"
-sudo rm -rf "/Applications/Xcode_12.3.0.app"
-sudo rm -rf "/Applications/Xcode_12.3.app"
+sudo rm -rf "/Applications/Xcode_10.3_beta.app" &
+sudo rm -rf "/Applications/Xcode_10.3.0.app" &
+sudo rm -rf "/Applications/Xcode_10.3.app" &
+sudo rm -rf "/Applications/Xcode_11.2.1_beta.app" &
+sudo rm -rf "/Applications/Xcode_11.2.1.app" &
+sudo rm -rf "/Applications/Xcode_11.2.app" &
+sudo rm -rf "/Applications/Xcode_11.3.1_beta.app" &
+sudo rm -rf "/Applications/Xcode_11.3.1.app" &
+sudo rm -rf "/Applications/Xcode_11.3.app" &
+sudo rm -rf "/Applications/Xcode_11.4.1_beta.app" &
+sudo rm -rf "/Applications/Xcode_11.4.1.app" &
+sudo rm -rf "/Applications/Xcode_11.4.app" &
+sudo rm -rf "/Applications/Xcode_11.5_beta.app" &
+sudo rm -rf "/Applications/Xcode_11.5.0.app" &
+sudo rm -rf "/Applications/Xcode_11.5.app" &
+sudo rm -rf "/Applications/Xcode_11.6_beta.app" &
+sudo rm -rf "/Applications/Xcode_11.6.0.app" &
+sudo rm -rf "/Applications/Xcode_11.6.app" &
+sudo rm -rf "/Applications/Xcode_11.7_beta.app" &
+sudo rm -rf "/Applications/Xcode_11.7.0.app" &
+sudo rm -rf "/Applications/Xcode_11.7.app" &
+sudo rm -rf "/Applications/Xcode_12.0.1.app" &
+sudo rm -rf "/Applications/Xcode_12.1.0.app" &
+sudo rm -rf "/Applications/Xcode_12.1.1.app" &
+sudo rm -rf "/Applications/Xcode_12.1.app" &
+sudo rm -rf "/Applications/Xcode_12.2.0.app" &
+sudo rm -rf "/Applications/Xcode_12.2.app" &
+sudo rm -rf "/Applications/Xcode_12.3.0.app" &
+sudo rm -rf "/Applications/Xcode_12.3.app" &
 
 ls -1 /Applications/*.app
 
@@ -59,15 +59,16 @@ mkdir -p workdir
 
 pushd workdir
 
-  # git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
   export PATH="$PATH:$PWD/depot_tools"
 
-  # which fetch
-  # # /Users/runner/work/fastmac/fastmac/workdir/depot_tools/fetch
+  which fetch
+  # /Users/runner/work/fastmac/fastmac/workdir/depot_tools/fetch
 
-  # fetch --no-history ios &
+  fetch --no-history ios &
 
+  wait
 
   pushd src
 
