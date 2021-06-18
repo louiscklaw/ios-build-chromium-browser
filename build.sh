@@ -36,6 +36,13 @@ sudo rm -rf "/Applications/Xcode_12.2.app" &
 sudo rm -rf "/Applications/Xcode_12.3.0.app" &
 sudo rm -rf "/Applications/Xcode_12.3.app" &
 
+sudo rm -rf "/Applications/Julia-1.6.app" &
+sudo rm -rf "/Applications/Microsoft Edge.app" &
+sudo rm -rf "/Applications/PowerShell.app" &
+sudo rm -rf "/Applications/R.app" &
+sudo rm -rf "/Applications/VirtualBox.app" &
+sudo rm -rf "/Applications/Visual Studio.app" &
+
 wait
 exit 1
 
