@@ -4,7 +4,17 @@ set -ex
 
 sw_vers
 
-sudo rm -rf /Applications
+sudo rm -rf /Applications/Firefox.app
+sudo rm -rf "/Applications/Google Chrome.app"
+# sudo rm -rf /Applications/Firefox.app
+# sudo rm -rf /Applications/Firefox.app
+# sudo rm -rf /Applications/Firefox.app
+# sudo rm -rf /Applications/Firefox.app
+# sudo rm -rf /Applications/Firefox.app
+# sudo rm -rf /Applications/Firefox.app
+
+
+exit 1
 
 df -kh
 
