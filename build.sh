@@ -68,9 +68,6 @@ pushd workdir
   # fetch --no-history ios &
 
 
-wait
-exit 1
-
   pushd src
 
     ios/build/tools/setup-gn.py
