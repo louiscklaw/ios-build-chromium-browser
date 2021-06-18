@@ -22,7 +22,7 @@ sudo rm -rf "/Applications/Visual Studio.app" &
 
 sudo rm -rf "/Applications/Xcode_10.3.0.app" &
 sudo rm -rf "/Applications/Xcode_10.3.app" &
-# sudo rm -rf "/Applications/Xcode_10.3_beta.app" &
+sudo rm -rf "/Applications/Xcode_10.3_beta.app" &
 # sudo rm -rf "/Applications/Xcode_11.2.1.app" &
 # sudo rm -rf "/Applications/Xcode_11.2.1_beta.app" &
 # sudo rm -rf "/Applications/Xcode_11.2.app" &
