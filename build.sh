@@ -54,7 +54,7 @@ sudo rm -rf "/Applications/Xcode_12.1.0.app" &
 
 df -kh
 
-mkdir workdir
+mkdir -p workdir
 
 pushd workdir
 
