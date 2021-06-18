@@ -27,14 +27,14 @@ sudo rm -rf "/Applications/Xcode_11.6_beta.app" &
 sudo rm -rf "/Applications/Xcode_11.7.0.app" &
 sudo rm -rf "/Applications/Xcode_11.7.app" &
 sudo rm -rf "/Applications/Xcode_11.7_beta.app" &
-sudo rm -rf "/Applications/Xcode_12.0.1.app" &
-sudo rm -rf "/Applications/Xcode_12.1.0.app" &
-sudo rm -rf "/Applications/Xcode_12.1.1.app" &
-sudo rm -rf "/Applications/Xcode_12.1.app" &
-sudo rm -rf "/Applications/Xcode_12.2.0.app" &
-sudo rm -rf "/Applications/Xcode_12.2.app" &
-sudo rm -rf "/Applications/Xcode_12.3.0.app" &
-sudo rm -rf "/Applications/Xcode_12.3.app" &
+# sudo rm -rf "/Applications/Xcode_12.0.1.app" &
+# sudo rm -rf "/Applications/Xcode_12.1.0.app" &
+# sudo rm -rf "/Applications/Xcode_12.1.1.app" &
+# sudo rm -rf "/Applications/Xcode_12.1.app" &
+# sudo rm -rf "/Applications/Xcode_12.2.0.app" &
+# sudo rm -rf "/Applications/Xcode_12.2.app" &
+# sudo rm -rf "/Applications/Xcode_12.3.0.app" &
+# sudo rm -rf "/Applications/Xcode_12.3.app" &
 
 sudo rm -rf "/Applications/Julia-1.6.app" &
 sudo rm -rf "/Applications/Microsoft Edge.app" &
