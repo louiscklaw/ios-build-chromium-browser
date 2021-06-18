@@ -4,6 +4,13 @@ set -ex
 
 sw_vers
 
+
+# install jdk
+brew tap adoptopenjdk/openjdk
+brew install htop
+brew install watch
+
+
 sudo rm -rf /Applications/Firefox.app
 sudo rm -rf "/Applications/Google Chrome.app" &
 sudo rm -rf "/Applications/Xcode_10.3.0.app" &
@@ -63,8 +70,6 @@ pushd workdir
 
   pushd src
 
-  # install jdk
-  brew tap adoptopenjdk/openjdk
 
   ios/build/tools/setup-gn.py
   autoninja -C out/Debug-iphonesimulator gn_all
