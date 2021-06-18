@@ -51,10 +51,6 @@ sudo rm -rf "/Applications/Xcode_11.7.app" &
 # sudo rm -rf "/Applications/Xcode_12.3.app" &
 
 
-
-wait
-exit 1
-
 df -kh
 
 mkdir workdir
@@ -68,10 +64,13 @@ pushd workdir
   which fetch
   # /Users/runner/work/fastmac/fastmac/workdir/depot_tools/fetch
 
-  fetch  --no-history ios
+  fetch --no-history ios &
+
+
+wait
+exit 1
 
   pushd src
 
-
-  ios/build/tools/setup-gn.py
-  autoninja -C out/Debug-iphonesimulator gn_all
+    ios/build/tools/setup-gn.py
+    autoninja -C out/Debug-iphonesimulator gn_all
