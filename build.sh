@@ -44,7 +44,7 @@ sudo rm -rf "/Applications/Xcode_11.7.0.app" &
 sudo rm -rf "/Applications/Xcode_11.7.app" &
 sudo rm -rf "/Applications/Xcode_12.0.1.app" &
 sudo rm -rf "/Applications/Xcode_12.1.0.app" &
-sudo rm -rf "/Applications/Xcode_12.1.1.app" &
+# sudo rm -rf "/Applications/Xcode_12.1.1.app" &
 # sudo rm -rf "/Applications/Xcode_12.1.app" &
 # sudo rm -rf "/Applications/Xcode_12.2.0.app" &
 # sudo rm -rf "/Applications/Xcode_12.2.app" &
