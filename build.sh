@@ -5,16 +5,12 @@ set -ex
 sw_vers
 
 
-
-
-
-
-
 # install jdk
 brew tap adoptopenjdk/openjdk
 brew install htop
 brew install watch
 brew install iftop
+brew install magic-wormhole
 
 
 sudo rm -rf /Applications/Firefox.app
