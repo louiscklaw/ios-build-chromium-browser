@@ -13,7 +13,36 @@ brew install iftop
 brew install magic-wormhole
 
 
-sudo rm -rf /Applications/Firefox.app
+
+ls -1 /Applications/*.app
+
+df -kh
+
+mkdir -p workdir
+
+pushd workdir
+
+  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+
+  export PATH="$PATH:$PWD/depot_tools"
+
+  which fetch
+  # /Users/runner/work/fastmac/fastmac/workdir/depot_tools/fetch
+
+  fetch --no-history ios
+
+
+  pushd src
+
+    ios/build/tools/setup-gn.py
+    autoninja -C out/Debug-iphonesimulator gn_all &
+
+
+
+
+
+
+sudo rm -rf "/Applications/Firefox.app" &
 sudo rm -rf "/Applications/Google Chrome.app" &
 sudo rm -rf "/Applications/Julia-1.6.app" &
 sudo rm -rf "/Applications/Microsoft Edge.app" &
@@ -72,29 +101,11 @@ sudo rm -rf "/Applications/Xcode_12.3.app" &
 wait
 
 
-ls -1 /Applications/*.app
 
-df -kh
 
-mkdir -p workdir
 
-pushd workdir
 
-  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
-  export PATH="$PATH:$PWD/depot_tools"
-
-  which fetch
-  # /Users/runner/work/fastmac/fastmac/workdir/depot_tools/fetch
-
-  fetch --no-history ios &
-
-  wait
-
-  pushd src
-
-    ios/build/tools/setup-gn.py
-    autoninja -C out/Debug-iphonesimulator gn_all
 
   popd
 
