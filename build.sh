@@ -5,6 +5,11 @@ set -ex
 sw_vers
 
 
+
+
+
+
+
 # install jdk
 brew tap adoptopenjdk/openjdk
 brew install htop
