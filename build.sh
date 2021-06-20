@@ -6,11 +6,11 @@ sw_vers
 
 
 # install jdk
-brew tap adoptopenjdk/openjdk
-brew install htop
-brew install watch
-brew install iftop
-brew install magic-wormhole
+# brew tap adoptopenjdk/openjdk
+# brew install htop
+# brew install watch
+# brew install iftop
+# brew install magic-wormhole
 
 
 # ./clean_applications.sh &
@@ -19,11 +19,11 @@ ls -1 /Applications/*.app
 
 df -kh
 
-rm -rf mkdir -p /Volumes/temp/workdir || true
+rm -rf mkdir -p /Volumes/temp || true
 
-mkdir -p /Volumes/temp/workdir
+mkdir -p /Volumes/temp
 
-pushd /Volumes/temp/workdir
+pushd /Volumes/temp
 
   git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
