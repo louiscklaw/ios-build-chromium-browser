@@ -13,7 +13,7 @@ brew install iftop
 brew install magic-wormhole
 
 
-./clean_applications.sh &
+# ./clean_applications.sh &
 
 ls -1 /Applications/*.app
 
@@ -36,7 +36,7 @@ pushd workdir
   pushd src
 
     ios/build/tools/setup-gn.py
-    autoninja -C out/Debug-iphonesimulator gn_all
+    autoninja -C /Volumes/temp/out/Debug-iphonesimulator gn_all
 
   popd
 
