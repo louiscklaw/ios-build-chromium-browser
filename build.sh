@@ -15,13 +15,13 @@ brew install iftop
 brew install magic-wormhole
 
 
-./clean_applications.sh &
+# ./clean_applications.sh &
 
-ls -1 /Applications/*.app
+# ls -1 /Applications/*.app
 
-df -kh
+# df -kh
 
-rm -rf mkdir -p build_temp || true
+# rm -rf mkdir -p build_temp || true
 
 mkdir -p build_temp
 
