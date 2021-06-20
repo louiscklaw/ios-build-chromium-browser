@@ -4,6 +4,8 @@ set -ex
 
 sw_vers
 
+#disable spotlight indexing
+sudo mdutil -i off -a
 
 # install jdk
 # brew tap adoptopenjdk/openjdk
