@@ -19,9 +19,9 @@ ls -1 /Applications/*.app
 
 df -kh
 
-mkdir -p workdir
+mkdir -p /Volumes/temp/workdir
 
-pushd workdir
+pushd /Volumes/temp/workdir
 
   git clone --depth=10 https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
@@ -36,7 +36,8 @@ pushd workdir
   pushd src
 
     ios/build/tools/setup-gn.py
-    autoninja -C /Volumes/temp/out/Debug-iphonesimulator gn_all
+    autoninja -C out/Release-iphonesimulator gn_all
+    autoninja -C out/Debug-iphonesimulator gn_all
 
   popd
 
