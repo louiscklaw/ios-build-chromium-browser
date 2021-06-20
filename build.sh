@@ -43,6 +43,13 @@ pushd build_temp
     # autoninja -C out/Release-iphonesimulator gn_all
     autoninja -C out/Debug-iphonesimulator gn_all
 
+    ls -l out/Debug-iphonesimulator/Chromium.app
+    ls -l out/Debug-iphonesimulator/*.app
+
+    ls -lh out/Debug-iphonesimulator/Chromium.app
+    ls -lh out/Debug-iphonesimulator/*.app
+
+
   popd
 
 popd
