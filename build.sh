@@ -21,11 +21,11 @@ ls -1 /Applications/*.app
 
 df -kh
 
-rm -rf mkdir -p /Volumes/temp || true
+rm -rf mkdir -p build_temp || true
 
-mkdir -p /Volumes/temp
+mkdir -p build_temp
 
-pushd /Volumes/temp
+pushd build_temp
 
   git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
