@@ -23,7 +23,7 @@ mkdir -p /Volumes/temp/workdir
 
 pushd /Volumes/temp/workdir
 
-  git clone --depth=10 https://chromium.googlesource.com/chromium/tools/depot_tools.git
+  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
   export PATH="$PATH:$PWD/depot_tools"
 
@@ -36,7 +36,7 @@ pushd /Volumes/temp/workdir
   pushd src
 
     ios/build/tools/setup-gn.py
-    autoninja -C out/Release-iphonesimulator gn_all
+    # autoninja -C out/Release-iphonesimulator gn_all
     autoninja -C out/Debug-iphonesimulator gn_all
 
   popd
