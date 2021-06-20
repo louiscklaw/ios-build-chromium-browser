@@ -8,11 +8,11 @@ sw_vers
 sudo mdutil -i off -a
 
 # install jdk
-# brew tap adoptopenjdk/openjdk
-# brew install htop
-# brew install watch
-# brew install iftop
-# brew install magic-wormhole
+brew tap adoptopenjdk/openjdk
+brew install htop
+brew install watch
+brew install iftop
+brew install magic-wormhole
 
 
 # ./clean_applications.sh &
