@@ -15,7 +15,7 @@ brew install iftop
 brew install magic-wormhole
 
 
-# ./clean_applications.sh &
+./clean_applications.sh &
 
 ls -1 /Applications/*.app
 
