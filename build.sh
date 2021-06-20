@@ -23,7 +23,7 @@ mkdir -p workdir
 
 pushd workdir
 
-  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+  git clone --depth=10 https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
   export PATH="$PATH:$PWD/depot_tools"
 
