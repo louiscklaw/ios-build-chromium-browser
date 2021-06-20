@@ -19,6 +19,8 @@ ls -1 /Applications/*.app
 
 df -kh
 
+rm -rf mkdir -p /Volumes/temp/workdir || true
+
 mkdir -p /Volumes/temp/workdir
 
 pushd /Volumes/temp/workdir
