@@ -7,6 +7,8 @@ sw_vers
 df -kh
 
 pushd build_temp
+  export PATH="$PATH:$PWD/depot_tools"
+
   pushd src
     rm -rf out || true
 
