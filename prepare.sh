@@ -41,5 +41,3 @@ pushd build_temp
   fetch --no-history ios
 
 popd
-
-./build.sh
